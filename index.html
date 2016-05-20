@@ -46,8 +46,10 @@
 		position:absolute;
 		left: 1em;
 		top: 1em;
-		width: 130px;
+		width: 160px;
+		height:160px;
 		z-index: 30000;
+
 	}
 	#bar {
 		position:relative;
@@ -57,16 +59,16 @@
 	}
 	#bar .button { 
 		position: absolute;
-		background: #222;
+		background: #f00;
 		width: 20px;
 		height: 20px;
 		cursor: pointer;
 	}
 	#bar .loaded { 
-		background: #666;
+		background:url(images/r3.gif);
 	}
 	#bar .viewed { 
-		background: #fff;
+		background: url(images/r2.gif);
 	}
 	#bar .selected { 
 		background: #f00;
@@ -78,6 +80,13 @@
 		z-index: 30000;
 		padding-left: 12px;
 		cursor: pointer;
+	}
+	#heart {
+		position: center;
+		background: url(images/r.gif);
+		
+		cursor: pointer;
+	}
 	}
 </style>
 
@@ -349,6 +358,9 @@ var m3D = function () {
 		<div id="bar"></div>
 	</div>
 	<div id="urlInfo"></div>
+	
+	<div id="heart"></div>
+	
 </div>
 
 <script type="text/javascript">
