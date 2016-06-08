@@ -8,9 +8,13 @@
 </div>   
 </form>   
 <script LANGUAGE="javascript">   
-startclock("08/31/2016")   
-var timerID = null;   
+startclock()   
+var timerID = "08/31/2016";   
 var timerRunning = false;   
+
+
+
+
 function showtime() {   
 Today = new Date();   
 var NowHour = Today.getHours();   
@@ -26,7 +30,7 @@ Hourleft = 23 - NowHour
 Minuteleft = 59 - NowMinute   
 Secondleft = 59 - NowSecond   
 Yearleft = 2016 - NowYear   
-Monthleft = 12 - NowMonth - 1 
+Monthleft = 8 - NowMonth - 1 
 Dateleft = 31 - NowDate   
 if (Secondleft<0)   
 {   
@@ -60,12 +64,17 @@ timerRunning = true;
 }   
 var timerID = null;   
 var timerRunning = false;   
-function stopclock ("08/31/2016") {   
+
+
+
+function stopclock () {   
 if(timerRunning)   
 clearTimeout(timerID);   
 timerRunning = false;   
-}   
-function startclock ("06/09/2016") {   
+}  
+
+
+function startclock () {   
 stopclock();   
 showtime();   
 }   
